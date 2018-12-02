@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>uploaded excel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/test.css" />
+</head>
+<body>
+<div id="content">
+
+	<table>
+	<tr th:each="row : ${content.entrySet()}">
+	<th th:text="${row.getKey()}"></th>
+	<td th:text="${row.getValue()}"></td>
+	</tr>
+	</table>
+
+</div>
+</body>
+</html>

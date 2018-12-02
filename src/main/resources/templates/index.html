@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>upload excel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/css/example.css" />
+</head>
+<body>
+<div id="content">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" value="select..." />
+    <input type="submit" value="upload" />
+    </form>
+    <p><a href="/uploaded">test</a></p>
+</div>
+</body>
+</html>
